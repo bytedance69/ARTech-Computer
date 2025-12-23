@@ -5,25 +5,50 @@
   <title>Galeri Servis - ARTech Computer</title>
   <style>
     body {
-      font-family: Arial;
-      text-align: center;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
       padding: 30px;
+      text-align: center;
     }
-    img {
-      width: 250px;
-      margin: 10px;
-      border-radius: 8px;
+
+    h1 {
+      color: #b22222;
+      margin-bottom: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #b22222;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
 <h1>Galeri Servis</h1>
-<p>Dokumentasi hasil perbaikan komputer & laptop</p>
+<p>Dokumentasi hasil perbaikan ARTech Computer</p>
 
-<img src="images/picture1.jpg">
-  
-<p><a href="index.html">⬅ Kembali ke Beranda</a></p>
+<div class="gallery">
+  <img src="images/picture1.jpg">
+  <!-- tambahkan foto lain di bawah ini -->
+</div>
+
+<a href="index.html">⬅ Kembali ke Beranda</a>
 
 </body>
 </html>
